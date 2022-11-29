@@ -1,0 +1,105 @@
+﻿<Window x:Class="Zad_1a.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zad_1a"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="835" Width="400">
+    <Border Padding="12">
+        <StackPanel>
+            <!-- Command buttons -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="applyButton" Margin="0 0 6 0" Content="Apply" Grid.Column="0"/>
+                <Button Name="resetButton" Margin="3 0 3 0" Content="Reset" Grid.Column="1"/>
+                <Button Name="refreshButton" Margin="6 0 0 0" Content="Refresh" Grid.Column="2"/>
+            </Grid>
+            <!-- Header -->
+            <TextBlock Name="pulsePropTextBlock" Margin="0 12 0 0" FontWeight="Bold" FontSize="14" Text="Pulse properties"/>
+            <!-- Description block -->
+            <TextBlock Name="descriptionTextBlock" Margin="0 12 0 0" FontSize="13" Text="Description"/>
+            <TextBox Name="descriptionTextBox" Padding="2"/>
+            <!-- StatusRevision block -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Margin="0 0 4 0" Grid.Column="0">
+                    <TextBlock Name="statusTextBlock" Text="Status"/>
+                    <TextBox Name="statusTextBox" Padding="2"/>
+                </StackPanel>
+                <StackPanel Margin="2 0 0 0" Grid.Column="1">
+                    <TextBlock Name="revisionTextBlock" Text="Revision"/>
+                    <TextBox Name="revisionTextBox" Padding="2"/>
+                </StackPanel>
+            </Grid>
+            <!-- Part number -->
+            <TextBlock Name="partNumberTextBlock" Margin="0 12 0 0" FontSize="13" Text="Part number"/>
+            <TextBox Name="partNumberTextBox" Padding="2"/>
+            <!-- Raw material block -->
+            <TextBlock Name="rawMaterialTextBlock" Margin="0 12 0 0" FontWeight="Bold" FontSize="13" Text="Raw material"/>
+            <TextBlock Name="materialTextBlock" Margin="0 10 0 0" FontSize="13" Text="Material"/>
+            <ComboBox Name="materialComboBox" Padding="2"/>
+            <!-- Manifacturing information -->
+            <TextBlock Name="manufactInfoTextBlock" Margin="0 10 0 0" FontWeight="Bold" FontSize="13" Text="Manifacturing information"/>
+            <TextBlock Name="centersTextBlock" Margin="0 10 0 0" FontSize="13" Text="Centers"/>
+            <GroupBox Name="workCentersGroupBox" BorderThickness="2">
+                <GroupBox.Header>
+                    <StackPanel>
+                        <TextBlock Text="Work center"/>
+                    </StackPanel>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <CheckBox Name="weldCheckBox" Content="Weld"/>
+                        <CheckBox Name="assemblyCheckBox" Content="Assembly"/>
+                        <CheckBox Name="plasmaCheckBox" Content="Plasma"/>
+                        <CheckBox Name="laserCheckBox" Content="Laser"/>
+                        <CheckBox Name="purchaseCheckBox" Content="Purchase"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <CheckBox Name="latheCheckBox" Content="Lathe"/>
+                        <CheckBox Name="drillCheckBox" Content="Drill"/>
+                        <CheckBox Name="foldCheckBox" Content="Fold"/>
+                        <CheckBox Name="rollCheckBox" Content="Roll"/>
+                        <CheckBox Name="sewCheckBox" Content="Sew"/>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+            <!-- Length -->
+            <TextBlock Name="lengthTextBlock" FontSize="13" Text="Length"/>
+            <TextBox Name="lengthTextBox" Padding="2"/>
+            <!-- Mass -->
+            <TextBlock Name="massTextBlock" FontSize="13" Text="Mass"/>
+            <TextBox Name="massTextBox" Padding="2"/>
+            <!-- Finish -->
+            <TextBlock Name="finishTextBlock" FontSize="13" Text="Finish"/>
+            <ComboBox Name="finishComboBox" Padding="2"/>
+            <!-- Purchase information -->
+            <TextBlock Name="purchaseTextBlock" FontSize="13" Text="Purchase information"/>
+            <ComboBox Name="purchaseComboBox" Padding="2"/>
+            <!-- Supplier name -->
+            <TextBlock Name="supplierNameTextBlock" Margin="0 10 0 0" FontSize="13" Text="Supplier name"/>
+            <TextBox Name="supplierNameTextBox" Padding="2"/>
+            <!-- Supplier code -->
+            <TextBlock Name="supplierCodeTextBlock" Margin="0 10 0 0" FontSize="13" Text="Supplier code"/>
+            <TextBox Name="supplierCodeTextBox" Padding="2"/>
+            <!-- Additional info-->
+            <TextBlock Name="addInfoTextBlock" Margin="0 10 0 0" FontWeight="Bold" FontSize="13" Text="Additional info"/>
+            <!-- Note -->
+            <TextBlock Name="noteTextBlock" Margin="0 10 0 0" FontSize="13" Text="Note"/>
+            <TextBox Name="noteTextBox" Padding="2" Height="45" TextWrapping="Wrap" 
+                     HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"/>
+        </StackPanel>
+    </Border>
+</Window>
