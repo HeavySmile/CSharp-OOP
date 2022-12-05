@@ -10,11 +10,11 @@ namespace Task_3
     {
         void IUndoable.Undo()
         {
-
+            Undo();
         }
         protected virtual void Undo()
         {
-
+            Console.WriteLine($"{GetType()}.Undo");
         }
        
     }

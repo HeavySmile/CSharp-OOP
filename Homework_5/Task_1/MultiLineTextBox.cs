@@ -24,6 +24,7 @@ namespace Task_1
         {
             TextBox thisTextBox = this;
 
+            // Cannot execute this method or access data members because its marked protected
             // thisTextBox.TypeText();
             // thisTextBox.text = "newText";
             // thisTextBox.baseText = "newBaseText";

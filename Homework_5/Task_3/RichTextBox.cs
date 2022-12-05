@@ -10,7 +10,7 @@ namespace Task_3
     {
         protected override void Undo()
         {
-
+            Console.WriteLine($"{GetType()}.Undo");
         }
     }
 }
